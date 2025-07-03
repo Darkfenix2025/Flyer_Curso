@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer: La Revolución de la IA en la Práctica Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .flyer-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff; /* White background for the flyer */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #4b5563, #1f2937); /* Dark gray gradient */
+            color: #ffffff;
+            padding: 40px 25px;
+            text-align: center;
+            position: relative;
+        }
+        .logo-img {
+            width: 120px; /* Adjust size as needed */
+            height: auto;
+            margin: 0 auto 15px;
+            border-radius: 8px; /* Slightly rounded corners for the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: block; /* Ensures centering with margin auto */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        .content-section {
+            padding: 30px 25px;
+            color: #374151; /* Dark gray text */
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d1d5db;
+            padding-bottom: 10px;
+        }
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .bullet-icon {
+            color: #10b981; /* Green checkmark */
+            font-size: 1.5rem;
+            line-height: 1;
+            margin-right: 10px;
+        }
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #4b5563;
+        }
+        .detail-value {
+            color: #6b7280;
+            text-align: right;
+        }
+        .contact-section {
+            background-color: #f9fafb; /* Lighter background for contact */
+            padding: 30px 25px;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        .contact-text {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #4b5563;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #374151;
+        }
+        .contact-info a {
+            color: #2563eb; /* Blue for links */
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .main-title {
+                font-size: 1.8rem;
+            }
+            .sub-title {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .content-section, .header-section, .contact-section {
+                padding: 25px 15px;
+            }
+        }
+
+        /* Spinner styles for loading indicator */
+        .spinner-border {
+            border: 4px solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+        }
+        @keyframes spinner-border {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Styling for generated FAQ content */
+        #faqOutput ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+        }
+        #faqOutput li {
+            margin-bottom: 15px;
+            padding-left: 0px;
+            text-align: left; /* Ensure list items align left */
+        }
+        #faqOutput strong {
+            color: #1f2937; /* Darker color for questions */
+            display: block; /* Ensures question breaks line before answer */
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <div class="header-section">
+            <!-- La imagen del logo se referencia directamente por su nombre de archivo. -->
+            <img src="LogoLegalito.jpg" alt="Logo de Legalito" class="logo-img">
+            <h1 class="main-title">WORKSHOP EXCLUSIVO Y PRESENCIAL<br>La Revolución de la IA en la Práctica Legal: Un Taller Estratégico para Abogados</h1>
+            <p class="sub-title">Una oportunidad única y limitada para un grupo reducido de profesionales. Deja de observar el futuro y empieza a construirlo. Sé el abogado que los demás consultarán mañana.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">La Invitación</h2>
+            <p class="mb-4 text-justify">
+                Estimado/a colega,
+            </p>
+            <p class="mb-4 text-justify">
+                Probablemente has escuchado sobre Inteligencia Artificial en el derecho. Quizás con una mezcla de curiosidad, escepticismo y hasta preocupación. La mayoría de lo que se dice son trucos superficiales que no sirven en la práctica real o teorías abstractas que no resuelven los problemas de hoy.
+            </p>
+            <p class="mb-6 font-semibold text-justify">
+                Este workshop es diferente.
+            </p>
+            <p class="mb-4 text-justify">
+                Te invito a un taller intensivo y presencial de 4 encuentros, diseñado para darte un método de trabajo real, profesional y ético que te posicionará en la vanguardia de la profesión. No se trata de reemplazar tu juicio, sino de potenciarlo con la herramienta más poderosa de nuestra era.
+            </p>
+            <p class="mb-6 text-justify">
+                Este no es un curso masivo. Es una sesión de trabajo en un grupo cerrado (máximo 8 participantes) para garantizar una experiencia personalizada y de alto impacto.
+            </p>
+
+            <h2 class="section-title">¿Qué Obtendrás de este Workshop? (Los Entregables)</h2>
+            <ul>
+                <li class="bullet-point">
+                    <span class="bullet-icon">&#10003;</span>
+                    <p>
+                        <span class="font-semibold">El Método Legalito:</span> Aprenderás un sistema de trabajo para analizar casos, redactar escritos y diseñar estrategias legales con una eficiencia y profundidad que hoy te parecen imposibles.
+                    </p>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">&#10003;</span>
+                    <p>
+                        <span class="font-semibold">Dominio Práctico:</span> A través de ejercicios sobre casos reales (incluyendo los tuyos), pasarás de la teoría a la aplicación directa.
+                    </p>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">&#10003;</span>
+                    <p>
+                        <span class="font-semibold">El Manual The Artificial Intelligence Revolution in Law:</span> Cada participante recibirá una copia impresa del libro fundacional del método, firmado por el autor.
+                    </p>
+                </li>
+                
+                <li class="bullet-point">
+                    <span class="bullet-icon">&#10003;</span>
+                    <p>
+                        <span class="font-semibold">Networking de Vanguardia:</span> Formarás parte de un grupo selecto de pioneros, creando una red de contactos invaluable para el futuro.
+                    </p>
+                </li>
+            </ul>
+
+            <h2 class="section-title">Estructura y Temario</h2>
+            <div class="mb-4">
+                <p><span class="font-semibold">Encuentro 1:</span> Diagnóstico y Fundamentos. ¿Qué es realmente la IA legal? Desmitificando el hype y entendiendo los riesgos y oportunidades reales.</p>
+            </div>
+            <div class="mb-4">
+                <p><span class="font-semibold">Encuentro 2:</span> El Arte del Diálogo Inteligente. Taller práctico de <span class="italic">prompting</span> profesional. Cómo dar instrucciones claras para obtener resultados de alta calidad.</p>
+            </div>
+            <div class="mb-4">
+                <p><span class="font-semibold">Encuentro 3:</span> El Método Legalito en Acción. Aplicación del Análisis 360° a casos prácticos. Redacción y argumentación asistida.</p>
+            </div>
+            <div class="mb-4">
+                <p><span class="font-semibold">Encuentro 4:</span> Implementación y Ecosistema. Estrategias para integrar estas herramientas en tu flujo de trabajo diario.</p>
+            </div>
+
+            <h2 class="section-title">Detalles Logísticos y Valor</h2>
+            <div class="detail-item">
+                <span class="detail-label">Dirigido por:</span>
+                <span class="detail-value">Dr. Dario Javier Ramirez</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Ubicación:</span>
+                <span class="detail-value">Libertad 434 piso 3ro ofic. 35, CABA</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Fechas:</span>
+                <span class="detail-value">Martes 5, 12, 19 y 26 de Agosto 2025</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Horario:</span>
+                <span class="detail-value">14:00 a 15:30 hs</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Inversión:</span>
+                <span class="detail-value">$260.000</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Plazas:</span>
+                <span class="detail-value">Estrictamente limitadas a 8 participantes</span>
+            </div>
+
+        <div class="contact-section">
+            <h2 class="section-title !text-center">Inscripción y Contacto</h2>
+            <p class="contact-text">
+                Las plazas se asignarán por riguroso orden de confirmación y pago.
+            </p>
+            <p class="contact-text">
+                Para reservar tu lugar o para cualquier consulta, por favor contacta directamente a:
+            </p>
+            <div class="contact-info">
+                <p>Dario Javier Ramirez</p>
+                <p><a href="mailto:dariojavierramirez@gmail.com">dariojavierramirez@gmail.com</a></p>
+                <p><a href="https://wa.me/+541164501571" target="_blank">11 6450 1571</a></p>
+                <p><a href="https://forms.gle/f9U3Vp3SwwZaqhUMA" target="_blank">Formulario de Inscripción al</a></p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
